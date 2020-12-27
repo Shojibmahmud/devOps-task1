@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
     apt-get update
     apt-get install -y apache2
     cp -rf /vagrant/www/* /var/www
-    cp -rf /vagrant/sites-available/* /etc/apache2/sites-available
+    cp -rf /vagrant/wsites/* /etc/apache2/wsites
     a2enmod ssl
     a2enmod cgid
     chmod +x ../../var/www/python/main.py
